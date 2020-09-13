@@ -1,0 +1,9 @@
+<%- include('partials/header'); -%>
+<h1>Your Favourite Shot is: <%= shot %> </h1>
+
+<% if(shot.toLowerCase() === "cover drive"){ %>
+	<p>That is <strong>Virat Kohli's</strong> Shot!!!</p>
+<% } else { %>
+	<p>Not beautiful as Virat's Cover Drive</p>
+<% } %>
+<%- include('partials/footer'); -%>
